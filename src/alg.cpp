@@ -13,8 +13,7 @@ std::vector<char> getPerm(const Tree& tree, int n) {
 
   std::vector<char> str = tree.strv;
 
-  for (; n > 1 && std::next_permutation(str.begin(), str.end()); n--)
-    ;
+  while (n > 1 && std::next_permutation(str.begin(), str.end())) n--;
 
   return str;
 }

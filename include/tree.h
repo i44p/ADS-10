@@ -7,7 +7,7 @@
 class Tree {
  public:
   std::vector<char> strv;
-  Tree(std::vector<char> s) : strv(s) {}
+  explicit Tree(std::vector<char> s) : strv(s) {}
 };
 
 #endif  // INCLUDE_TREE_H_
